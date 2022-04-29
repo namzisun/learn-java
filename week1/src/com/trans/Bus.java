@@ -24,7 +24,7 @@ public class Bus {
     }
 
     public void setPassenger(int passenger) {
-        this.passenger = passenger;
+        this.passenger += passenger;
     }
 
     public int getMoney() {
@@ -32,16 +32,7 @@ public class Bus {
     }
 
     public void setMoney(int money) {
-        this.money = money;
-    }
-
-    public void plusPassenger() {
-        passenger++;
-        money += 1000;
-    }
-
-    public void minusPassenger() {
-        passenger--;
+        this.money += money;
     }
 
     public void showBusInfo() {

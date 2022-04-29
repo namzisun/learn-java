@@ -1,40 +1,22 @@
 package com.student2;
 
 public class Subject {
-    private int koreaScore;
-    private int mathScore;
-    private String koreaSubject;
-    private String mathSubject;
+    private int Score;
+    private String Subject;
 
-    public int getKoreaScore() {
-        return koreaScore;
+    public int getScore() {
+        return Score;
     }
 
-    public void setKoreaScore(int koreaScore) {
-        this.koreaScore = koreaScore;
+    public void setScore(int score) {
+        Score = score;
     }
 
-    public int getMathScore() {
-        return mathScore;
+    public String getSubject() {
+        return Subject;
     }
 
-    public void setMathScore(int mathScore) {
-        this.mathScore = mathScore;
-    }
-
-    public String getKoreaSubject() {
-        return koreaSubject;
-    }
-
-    public void setKoreaSubject(String koreaSubject) {
-        this.koreaSubject = koreaSubject;
-    }
-
-    public String getMathSubject() {
-        return mathSubject;
-    }
-
-    public void setMathSubject(String mathSubject) {
-        this.mathSubject = mathSubject;
+    public void setSubject(String subject) {
+        Subject = subject;
     }
 }

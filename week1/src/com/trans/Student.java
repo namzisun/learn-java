@@ -12,12 +12,14 @@ public class Student {
     }
 
     public void takeBus(Bus bus) {
-        bus.plusPassenger();
+        bus.setMoney(1000);
+        bus.setPassenger(1);
         wallet -= 1000;
     }
 
     public void takeSubway(Subway subway) {
-        subway.plusPassenger();
+        subway.setMoney(1200);
+        subway.setPassenger(1);
         wallet -= 1200;
     }
 

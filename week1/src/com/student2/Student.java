@@ -4,7 +4,8 @@ public class Student {
     private int studentID;
     private String studentName;
 
-    Subject subject = new Subject();
+    Subject korea = new Subject();
+    Subject math = new Subject();
 
     public Student(int studentID, String studentName) {
         this.studentID = studentID;
@@ -12,18 +13,18 @@ public class Student {
     }
 
     public void setKorean(String koreaSubject, int koreaScore) {
-        subject.setKoreaSubject(koreaSubject);
-        subject.setKoreaScore(koreaScore);
+        korea.setSubject(koreaSubject);
+        korea.setScore(koreaScore);
     }
 
     public void setMath(String mathSubject, int mathScore) {
-        subject.setMathSubject(mathSubject);
-        subject.setMathScore(mathScore);
+        math.setSubject(mathSubject);
+        math.setScore(mathScore);
     }
 
     public void showStudentInfo() {
         System.out.print("학생" + studentName + "의 총점은 ");
-        System.out.print(subject.getKoreaScore() + subject.getMathScore());
+        System.out.print(korea.getScore() + math.getScore());
         System.out.println(" 입니다.");
     }
 }
