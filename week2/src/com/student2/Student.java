@@ -2,6 +2,10 @@ package com.student2;
 
 import java.util.ArrayList;
 
+/*
+ArrayList
+: 표준배열보다는 느리지만 배열에서 많은 조작이 필요한 경우 유용하게 사용가능
+ */
 public class Student {
     private int studentID;
     private String studentName;
@@ -10,6 +14,7 @@ public class Student {
     public Student(int studentID, String studentName) {
         this.studentID = studentID;
         this.studentName = studentName;
+        //<>로 타입을 선언하면 해당 타입의 데이터만 추가할 수 있다
         subjectList = new ArrayList<Subject>();
     }
 

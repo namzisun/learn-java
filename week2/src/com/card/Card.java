@@ -1,11 +1,11 @@
 package com.card;
 
 public class Card {
-    private static int cardSerialNumer = 10000;
+    private static int cardSerialNumber = 10000;
     private int cardNumber;
 
     public Card() {
-        cardNumber = ++cardSerialNumer;
+        cardNumber = ++cardSerialNumber;
     }
 
     public int getCardNumber() {
