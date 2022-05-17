@@ -18,7 +18,10 @@ public class Company {
 
     < 문제점 >
     싱글톤 인스턴스가 너무 많은 일을 하게되면 다른 클래스의 인스턴스들 간에 결합도가 지나치게 높아짐
-리   */
+
+    < 언제 쓰는데? >
+    유일한 객체한테(유일성이 확실하게 보장되어야 하는 존재들) -> ex) log handler, calender, connection pool
+    */
 
     // private - 외부에서 접근 불가능한 생성자
     private Company() {}
@@ -30,4 +33,9 @@ public class Company {
             instance = new Company();
         return instance;
     }
+
+    /*
+    LazyHolder를 사용한 lazy instancelation
+    : 클래스가 로드될 때 인스턴스를 생성하는게 아니라 사용할 때 생성하는 방식(만들어놓고 안쓸수도 있으니까)
+     */
 }
