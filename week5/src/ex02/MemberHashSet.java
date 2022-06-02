@@ -2,9 +2,10 @@ package ex02;
 
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.Set;
 
 public class MemberHashSet {
-    public HashSet<Member> memberHash;
+    public Set<Member> memberHash;
 
     public MemberHashSet() {
         memberHash = new HashSet<> ();

@@ -25,8 +25,10 @@ public class Member {
 
     @Override
     public int hashCode() {
-        return memberId;
+        return String.valueOf(memberId).hashCode();
     }
+    // hashCode와 equals 둘 다 사용하는 이유? -> 해시충돌
+    // String.valueOf : String hash가 더 강점이 있다 -> 찾아보세요
 
     @Override
     public boolean equals(Object obj) {

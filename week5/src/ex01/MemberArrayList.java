@@ -2,9 +2,11 @@ package ex01;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
 
 public class MemberArrayList {
-    private ArrayList<Member> memberList;
+    private List<Member> memberList;
 
     public MemberArrayList() {
         memberList = new ArrayList<> ();
@@ -24,6 +26,7 @@ public class MemberArrayList {
 
     public void removeMember(int memberId) {
         Iterator<Member> iterator = memberList.iterator();
+        // ListIterator -> 양방향 iterator
         while (iterator.hasNext()) {
             Member member = iterator.next();
             if (member.getMemberId() == memberId) {
@@ -34,4 +37,5 @@ public class MemberArrayList {
             }
         }
     }
+
 }
